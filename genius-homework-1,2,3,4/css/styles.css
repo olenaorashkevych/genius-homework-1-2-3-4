@@ -1,0 +1,146 @@
+/* play-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/play-v21-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* play-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/play-v21-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/roboto-v49-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/roboto-v49-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    box-sizing: border-box;
+    --primary-white: #FFFFFF;
+    --primary-blue: #2B7FFF;
+    --primary-dark-blue: #011C44;
+    --secondary-dark-grey: #4A4A4A;
+    --secondary-light-grey: #747272;
+    --secondary-dark-blue: #011F4A;
+    --yellow: #FFD02B;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: var(--primary-dark-blue);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 64px;
+    font-family: "Play";
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--primary-blue);
+}
+
+.hero-title {
+    font-size: 18px;
+}
+
+.hero-title span {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+
+}
+
+h2 span {
+    color: var(--primary-blue);
+}
+
+.main-header {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* .main-navigation {}
+
+.main-logo-link {}
+
+.main-logo {}
+
+.navigation-list {}
+
+.main-navigation-link {} */
+
+.hero-section p {
+    font-size: 12px
+}
+
+/* 
+.order-call-button {} */
+.second-section {
+    font-size: 18px;
+
+}
+
+/* .why-us-list {}
+
+.our-advantage {}
+
+.our-mission {} */
+
+/* .our_procedures-section {}
+
+.header-our_procedures {}
+
+.how_to_find_us-header {}
+
+.main-footer {} */
+
+.footer-navigation {}
+
+/* .bottom-logo-link {}
+
+.bottom-logo {}
+
+.footer-navigation-list {}
+
+.footer-navigation-link {} */
+
+.adresses {}
+
+.policy {}
