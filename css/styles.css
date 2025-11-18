@@ -56,6 +56,8 @@ h2 {
 
 button {
     background-color: var(--beauty-landing-2-s2);
+
+
 }
 
 svg {
@@ -68,7 +70,7 @@ a {
 }
 
 .container {
-    margin: 0px auto;
+    margin: 0px 100px;
     padding: 0px 30px;
     width: 100%;
     max-width: 1296px;
@@ -117,7 +119,7 @@ a {
     justify-content: center;
     min-height: 50px;
     padding: 10px 28px;
-    border-radius: 7px;
+    border-radius: 32px;
     font-size: 16px;
     font-weight: 500;
     transition: opacity 0.2s ease-in;
@@ -135,10 +137,19 @@ a {
 
 /* Блок header */
 .main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.25);
     min-height: 106px;
     display: flex;
+    padding left: 100px;
+
 }
 
 .main-header .logo-header {}
@@ -146,6 +157,7 @@ a {
 .main-header .main-logo-link {}
 
 .main-header .main-logo {}
+
 
 .main-header .main-navigation {}
 
@@ -183,9 +195,25 @@ a {
 }
 
 /* Блок hero */
-.hero-section {}
+.hero-section {
+    background-image: url(./images/fon.png);
+    background-size: cover;
+    /* картинка покриває весь блок, не обрізається занадто */
+    background-position: center top;
+    /* початок картинки прилип до верху */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* щоб секція займала весь екран */
+    padding-top: 106px;
+    /* висота хедера, щоб контент не ховався під ним */
+}
 
-.hero-section .hero-section-hold {}
+.hero-section .hero-section-hold {
+    max-width: 408px;
+    margin-left: 100px;
+    margin-top: 5px;
+
+}
 
 .hero-section .hero-section-title {
     font-weight: 400;
@@ -202,6 +230,10 @@ a {
 }
 
 .hero-section .hero-section-button {}
+
+.hero-section .button-hold {
+    max-width: 238px;
+}
 
 .hero-section .hero-section-text {
     font-weight: 400;
@@ -231,16 +263,7 @@ span {
     color: var(--primary-blue);
 }
 
-.main-header {
-    display: flex;
-    font-size: 18px;
-    font-weight: 400;
-    height: 100%;
-    height: 106px;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.25);
 
-}
 
 
 
@@ -253,7 +276,6 @@ span {
 
 .logo-header {
 
-    margin-left: 100px;
     background-color: #9b2b2b;
 
 
