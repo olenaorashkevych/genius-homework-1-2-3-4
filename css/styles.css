@@ -56,7 +56,7 @@ h2 {
 
 button {
     background-color: var(--beauty-landing-2-s2);
-
+    font-family: inherit;
 
 }
 
@@ -70,10 +70,10 @@ a {
 }
 
 .container {
-    margin: 0px 100px;
+    margin: 0px auto;
     padding: 0px 30px;
     width: 100%;
-    max-width: 1296px;
+    max-width: 1300px;
 }
 
 .d-flex {
@@ -112,7 +112,7 @@ a {
 .btn {
     --bg: #5c62ec;
     --color: #fff;
-    background-color: var(--bg);
+    background-color: var(--beauty-landing-2-s2);
     color: var(--color);
     display: inline-flex;
     align-items: center;
@@ -132,8 +132,6 @@ a {
     color: var(--color);
     opacity: 0.8;
 }
-
-
 
 /* Блок header */
 .main-header {
@@ -196,6 +194,7 @@ a {
 
 /* Блок hero */
 .hero-section {
+
     background-image: url(./images/fon.png);
     background-size: cover;
     /* картинка покриває весь блок, не обрізається занадто */
@@ -216,6 +215,7 @@ a {
 }
 
 .hero-section .hero-section-title {
+
     font-weight: 400;
     font-size: 18px;
     color: var(--beauty-landing-2-c1);
@@ -227,12 +227,16 @@ a {
     line-height: 81%;
     text-transform: capitalize;
     color: var(--beauty-landing-2-s2);
+    margin-bottom: 40px;
 }
 
-.hero-section .hero-section-button {}
+.hero-section .hero-section-button {
+    margin-bottom: 15px;
+}
 
 .hero-section .button-hold {
     max-width: 238px;
+
 }
 
 .hero-section .hero-section-text {
@@ -242,128 +246,24 @@ a {
     color: var(--beauty-landing-2-c3);
 }
 
-
-
-
-/* 
-
-.hero-title {
-    font-size: 18px;
+.blue_wave_background {
+    background-image: url(./images/backgroundnostar.png);
 }
 
-.hero-title span {
-    font-family: "Play", sans-serif;
-    font-weight: 700;
-    font-size: 140px;
+/* Second-section Друга секція Перевтілюйтеся в beauty zone*/
+.second-section {}
 
+.second-section .container {}
 
+.second-section .d-flex {}
+
+.second-section .flex-space-between {}
+
+.second-section .flex-align-items {}
+
+.second-section .text-holder {
+    max-width: 709px;
+    background-color: #819b57;
 }
 
-span {
-    color: var(--primary-blue);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.logo-header {
-
-    background-color: #9b2b2b;
-
-
-}
-
-.header-icons {
-    color: #FFFFFF;
-    margin-left: 243px;
-    width: 160px;
-    height: 32px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-navigation {
-
-    display: flex;
-
-    opacity: 50%;
-}
-
-.main-logo-link {}
-
-.main-logo {}
-
-.navigation-list {
-    margin-left: 230px;
-    display: flex;
-    gap: 56px;
-
-
-}
-
-.main-navigation-link {}
-
-.hero-section p {
-    font-size: 12px;
-
-}
-
-.hero-section {
-    max-height: 615px;
-    width: 100%;
-}
-
-.hero-block-one {
-    max-width: 519px;
-    max-height: 409px;
-    margin-left: 200px;
-}
-
-.second-section {
-    font-size: 18px;
-
-}
-
-
-
-
-
-
-
-
-
-.why-us-list {}
-
-.our-advantage {}
-
-.our-mission {}
-
-.our_procedures-section {}
-
-.header-our_procedures {}
-
-.how_to_find_us-header {}
-
-.main-footer {}
-
-.footer-navigation {}
-
-.bottom-logo-link {}
-
-.bottom-logo {}
-
-.footer-navigation-list {}
-
-.footer-navigation-link {}
-
-.adresses {}
-
-.policy {} */
+/* Cекція чому люди обирають нас why us */
