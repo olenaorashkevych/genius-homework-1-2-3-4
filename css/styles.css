@@ -146,22 +146,9 @@ a {
     background: rgba(255, 255, 255, 0.25);
     min-height: 106px;
     display: flex;
-    padding left: 100px;
+    padding-left: 100px;
 
 }
-
-.main-header .logo-header {}
-
-.main-header .main-logo-link {}
-
-.main-header .main-logo {}
-
-
-.main-header .main-navigation {}
-
-.main-header .navigation-list {}
-
-.main-header .main-navigation-li {}
 
 .main-header .main-navigation-link {
     font-weight: 400;
@@ -246,11 +233,13 @@ a {
     color: var(--beauty-landing-2-c3);
 }
 
-.blue_wave_background {
-    background-image: url(./images/backgroundnostar.png);
-}
 
 /* Second-section Друга секція Перевтілюйтеся в beauty zone*/
+
+/* .blue_wave_background {
+    background-image: url(./images/backgroundnostar.png);
+} */
+
 .second-section {}
 
 .second-section .container {}
