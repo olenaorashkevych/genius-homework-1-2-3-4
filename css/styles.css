@@ -57,7 +57,6 @@ h2 {
 button {
     background-color: var(--beauty-landing-2-s2);
     font-family: inherit;
-
 }
 
 svg {
@@ -234,20 +233,22 @@ a {
     color: var(--beauty-landing-2-c3);
 }
 
+/* 
+Second-section Друга секція Перевтілюйтеся в beauty zone */
 
-/* Second-section Друга секція Перевтілюйтеся в beauty zone*/
-
-/* .blue_wave_background {
+.blue_wave_background {
     background-image: url(./images/backgroundnostar.png);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
-
-} */
+    margin-top: -7px;
+    background-size: cover;
+}
 
 
 .second-section {
     position: relative;
+
 }
 
 .second-section span {
@@ -255,7 +256,7 @@ a {
 }
 
 .second-section .text-holder {
-    margin-top: 60px;
+
     max-width: 709px;
     /* background-color: #819b57; */
 
@@ -284,11 +285,17 @@ a {
 }
 
 /* Cекція чому люди обирають нас why us */
+.why-us-section {
+    width: 100%;
+    margin-bottom: 110px;
+}
+
 .why_us_cards_text_holder {
+
     width: 100%;
     max-width: 1060px;
 
-    margin: 0 auto;
+    margin: 150px auto 0 auto;
 }
 
 .card {
@@ -314,7 +321,10 @@ a {
 }
 
 .why-us-section h2 {
-    margin: 0, auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 78px;
+    margin-bottom: 62px;
 }
 
 .why-us-text-holder {
@@ -328,10 +338,15 @@ a {
 }
 
 /* секція Наші процедури */
+.our_procedures-section {
+    background-color: #2b7fff;
+}
+
 .our_procedures_text_card_holder {
     text-align: center;
     max-width: 1216px;
-    gap: 12px;
+    gap: 48px;
+
 }
 
 .our_procedures_tex_holder span {
