@@ -78,6 +78,7 @@ a {
 
 .d-flex {
     display: flex;
+    justify-content: center;
 }
 
 .flex-align-items {
@@ -238,21 +239,164 @@ a {
 
 /* .blue_wave_background {
     background-image: url(./images/backgroundnostar.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+
 } */
 
-.second-section {}
 
-.second-section .container {}
+.second-section {
+    position: relative;
+}
 
-.second-section .d-flex {}
-
-.second-section .flex-space-between {}
-
-.second-section .flex-align-items {}
+.second-section span {
+    color: var(--beauty-landing-2-s2);
+}
 
 .second-section .text-holder {
+    margin-top: 60px;
     max-width: 709px;
-    background-color: #819b57;
+    /* background-color: #819b57; */
+
+}
+
+.second-section .text-holder .h2_span {
+    margin-bottom: 40px;
+
+}
+
+.second-section .text-holder .bold_cap {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: inherit;
+
+}
+
+.second-section .text-holder p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 173%;
+    color: var(--beauty-landing-2-c1);
+    margin-bottom: 40px;
+
 }
 
 /* Cекція чому люди обирають нас why us */
+.why_us_cards_text_holder {
+    width: 100%;
+    max-width: 1060px;
+
+    margin: 0 auto;
+}
+
+.card {
+
+    max-width: 316px;
+    padding: 34px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: #000;
+    background-color: #011f4a;
+    border-radius: 32px;
+    max-width: 316px;
+    height: 181px;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+    background: var(--beauty-landing-2-background);
+}
+
+.why-us-section span {
+    color: var(--beauty-landing-2-s2);
+
+}
+
+.why-us-section h2 {
+    margin: 0, auto;
+}
+
+.why-us-text-holder {
+    max-width: 432px;
+    margin: 0 auto;
+}
+
+.why-us-section svg {
+    width: 48px;
+    height: 48px;
+}
+
+/* секція Наші процедури */
+.our_procedures_text_card_holder {
+    text-align: center;
+    max-width: 1216px;
+    gap: 12px;
+}
+
+.our_procedures_tex_holder span {
+    color: var(--beauty-landing-2-s2);
+}
+
+.our_procedures_card_holder {
+    gap: 12px;
+
+
+
+}
+
+.our_procedures_card_holder .im-bg-1 {
+    width: 344px;
+    height: 456px;
+    border-radius: 4px 120px;
+    background-image: linear-gradient(180deg,
+            rgba(1, 28, 68, 0) 47.4%,
+            rgba(1, 28, 68, 0.73) 82.66%,
+            #011c44 99.06%),
+        url(./images/image1580opt.jpg);
+
+
+}
+
+.our_procedures_card_holder .im-bg-2 {
+    width: 344px;
+    height: 456px;
+    border-radius: 4px 120px;
+    background-image: linear-gradient(180deg,
+            rgba(1, 28, 68, 0) 47.4%,
+            rgba(1, 28, 68, 0.73) 82.66%,
+            #011c44 99.06%),
+        url(./images/image1570opt.jpg);
+
+
+
+}
+
+.our_procedures_card_holder .im-bg-3 {
+    width: 344px;
+    height: 456px;
+    border-radius: 4px 120px;
+    background-image: linear-gradient(180deg,
+            rgba(1, 28, 68, 0) 47.4%,
+            rgba(1, 28, 68, 0.73) 82.66%,
+            #011c44 99.06%),
+        url(./images/image1574opt.jpg);
+
+
+}
+
+.our_procedures_card_holder .im-bg-1,
+.our_procedures_card_holder .im-bg-2,
+.our_procedures_card_holder .im-bg-3 {
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 32px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 118%;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+
+}
