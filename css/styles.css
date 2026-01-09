@@ -251,6 +251,10 @@ Second-section Друга секція Перевтілюйтеся в beauty zo
 
 }
 
+.stars {
+    z-index: 5;
+}
+
 .dark-blue-star {
     position: absolute;
     top: 354px;
