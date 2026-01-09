@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="./css/styles.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
+
     <header class="main-header">
         <div class="container d-flex flex-space-between flex-align-items">
             <div class="logo-header"> <a href="#" class="main-logo-link"><img src="./css/images/logo.svg"
@@ -67,15 +69,22 @@
         </section>
         </div>
         <section class="second-section">
-            <div class="container d-flex">
-                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 56 56">
+            <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 56 56"
+                    class="dark-blue-star">
                     <path fill="#011F4A"
                         d="m11.713 0 18.65 17.822 25.063-6.11-17.822 18.651 6.109 25.063-18.65-17.822L0 43.713l17.822-18.65L11.712 0Z" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15"
+                    class="gray-star">
                     <path fill="#747272"
                         d="m4.255 0 4.077 4.997 6.406-.741-4.997 4.076.742 6.406-4.077-4.997L0 10.483l4.997-4.077L4.255 0Z" />
                 </svg>
+                <img class="blue-star" src="/css/images/Star2.png" alt="" srcset="">
+
+            </div>
+            <div class="container d-flex">
+
 
                 <div class="text-holder">
                     <h2>Перевтілюйтесь </h2>
@@ -166,78 +175,164 @@
             </section>
             <section id="our_procedures-section" class="our_procedures-section">
                 <div class="container d-flex ">
-                    <div class="our_procedures_text_card_holder">
-                        <div class="our_procedures_tex_holder">
-                            <h2 class="header-our_procedures">Наші <span>процедури</span></h2>
+                    <button class="our-procedures-section-button "><img src="./css/images/Arrow2.png" alt=""
+                            srcset=""></button>
+                    <div class="swiper">
+                        <div class="our_procedures_text_card_holder">
+                            <div class="our_procedures_tex_holder">
+                                <h2 class="header-our_procedures">Наші <span>процедури</span></h2>
+                            </div>
+
+                            <div class="our_procedures_card_holder d-flex flex-space-between">
+                                <div class="im-bg-1">
+                                    <p class="card_text">Маски <br>для обличя</p>
+
+                                </div>
+                                <div class="im-bg-2">
+                                    <p class="card_text">Iн'єкції <br>для обличя</p>
+
+                                </div>
+                                <div class="im-bg-3">
+                                    <p class="card_text">Очищення <br>обличя</p>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="our_procedures_card_holder d-flex flex-space-between">
-                            <div class="im-bg-1">
-                                <p class="card_text">Маски <br>для обличя</p>
-
-                            </div>
-                            <div class="im-bg-2">
-                                <p class="card_text">Iн'єкції <br>для обличя</p>
-
-                            </div>
-                            <div class="im-bg-3">
-                                <p class="card_text">Очищення <br>обличя</p>
-
-                            </div>
-
-                        </div>
-
-
-
                     </div>
+                    <button class="our-procedures-section-button "><img src="./css/images/Arrow1.png" alt=""
+                            srcset=""></button>
 
                 </div>
-            </section>
+                <div class="container d-flex">
+                    <div class="swiper-pagination"><img src="./css/images/Ellipse1.png" alt=""> <img
+                            src="./css/images/Ellipse1.png" alt=""><img src="./css/images/Ellipse1.png" alt=""></div>
+                </div>
+        </div>
         </div>
 
-        <!-- <section id="how_to_find_us-section">
+        </div>
+
+        <section class="how_to_find_us-section d-flex">
             <div class="container d-flex">
                 <h2 class="how_to_find_us-header">Як нас <span>знайти</span></h2>
             </div>
+
+            <div class="container d-flex">
+
+                <div class="sign-up-form container d-flex">
+                    <div class="how-to-find-wrapper d-flex">
+                        <div class="map-container" style="width:605px; height:481px;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40819.725284512155!2d28.589657507324205!3d50.25023561554632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c65cfd4a914eb%3A0x5f5b18d5dbe8aaa9!2z0JTQstC10YDRliAmINCf0ZbQtNC70L7Qs9Cw!5e0!3m2!1sru!2sua!4v1765977948924!5m2!1sru!2sua"
+                                width="605" height="481" style="border: 0;;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                        <form class="sign-up">
+                            <p>Запишіться <span>безкоштовно</span><br>і отримайте подарунок</p>
+                            <div class="inputs-wraper">
+
+                                <div class="form-field">
+
+                                    <input type="text" id="full-name" name="full_name"
+                                        placeholder="Ваше ім'я та прізвище" required>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="phone"></label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефону" required>
+                                </div>
+
+                                <div class="form-field">
+
+                                    <input type="email" id="email" name="email" placeholder="Ваша електронна пошта"
+                                        required>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn sign-up-button">
+                                Записатись&nbsp; безкоштовно
+                            </button>
+                            <p class="privacy-text">
+                                Натискаючи на кнопку я погоджуюсь <br>
+                                <a href="#" class="privacy-link"> з політикою конфіденційності</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
         </section>
 
-    </main> -->
-
-        <!-- <footer class="main-footer">
+    </main>
+    <footer class="main-footer">
         <div class="container">
-            <nav class="footer-navigation">
-                <a href="#" class="bottom-logo-link">
-                    <img src="" alt="" class="bottom-logo">
-                </a>
-                <ul class="footer-navigation-list">
-                    <li class="footer-navigation-link"><a href="/" target="_blank">Про нас</a></li>
-                    <li class="footer-navigation-link"><a href="#why_us-section">Чому ми</a></li>
-                    <li class="footer-navigation-link"><a href="#our_procedures-section">Наші процедури</a></li>
-                    <li class="footer-navigation-link"><a href="#how_to_find_us-section">Контакти</a></li>
-                </ul>
-            </nav>
-    
-            <address class="adresses">
-                <ul>
-                    <li><a href="tel:+380960000007">+38(096)000 00 07</a></li>
-                    <li><a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
-                    <li>
-                        <a href="https://share.google/85eC8hlAb2mXyaw8q" target="_blank">
-                            Україна, м. Київ, вул. Тараса Шевченка 5
+            <div class="main-footer-text-holder">
+                <div class="main-footer-colomn-0-logo">
+                    <a href="#" class="bottom-logo-link">Beauty <br> zone
+                        <img src="" alt="" class="bottom-logo">
+                    </a>
+                </div>
+                <div class="main-footer-text-colomn-1 ">
+                    <nav class="footer-navigation">
+
+                        <ul class="footer-navigation-list">
+                            <li class="footer-navigation-link"><a href="/" target="_blank">Про нас</a></li>
+                            <li class="footer-navigation-link"><a href="#why_us-section">Чому ми</a></li>
+                            <li class="footer-navigation-link"><a href="#our_procedures-section">Наші процедури</a></li>
+                            <li class="footer-navigation-link"><a href="#how_to_find_us-section">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="main-footer-text-colomn-2 ">
+                    <address class="adresses">
+                        <ul class="adresses-list">
+                            <li><a href="tel:+380960000007">+38(096)000 00 07</a></li>
+                            <li><a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
+                            <li>
+                                <a href="https://share.google/85eC8hlAb2mXyaw8q" target="_blank">
+                                    Україна, м. Київ, <br>вул. Тараса Шевченка 5
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                    <div class="footer-icons d-flex gap-32px">
+                        <a href="#" class="footer-icon-link">
+                            <svg class="icon">
+                                <use
+                                    href="./css/images/icons/symbol-defs.svg#icon-telephone-receiver_icon-iconscom_56033-1">
+                                </use>
+                            </svg>
                         </a>
-                    </li>
-                </ul>
-            </address>
-    
-            <a href="#" target="_blank" class="policy">Політика конфіденційності</a>
-            <p>© 2022 Дані захищено</p>
+                        <a href="" class="footer-icon-link">
+                            <svg class="icon">
+                                <use href="./css/images/icons/symbol-defs.svg#icon-fbopt"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="footer-icon-link">
+                            <svg class="icon">
+                                <use href="./css/images/icons/symbol-defs.svg#icon-insopt"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="main-footer-colomn-3 ">
+                    <a href="#" target="_blank" class="policy">Політика конфіденційності</a>
+                    <p>© 2022 Дані захищено</p>
+                </div>
+
+            </div>
+
+            <img src="./css/images/pexels-photo-8101532-PhotoRoomopt.png" alt="" srcset="">
         </div>
     </footer>
 
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
 </body>
 
