@@ -131,6 +131,7 @@ a {
 .btn:hover {
     color: var(--color);
     opacity: 0.8;
+    transition: 0.2s;
 }
 
 /* Блок header */
@@ -160,6 +161,7 @@ a {
 .main-header .main-navigation-link.active {
     font-weight: 700;
     color: var(--beauty-landing-2-s2);
+    transition: 0.2s;
 }
 
 .main-header .header-icons {
@@ -173,6 +175,7 @@ a {
 
 .main-header .header-icons .header-icon-link:hover {
     color: var(--beauty-landing-2-s2);
+    transition: 0.2s;
 }
 
 .main-header .header-icons .icon {
@@ -304,6 +307,30 @@ Second-section Друга секція Перевтілюйтеся в beauty zo
     color: var(--beauty-landing-2-c1);
     margin-bottom: 40px;
 
+}
+
+@keyframes starFloat {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 0.9;
+    }
+}
+
+.stars .blue-star,
+.stars .gray-star,
+.stars .dark-blue-star {
+    animation: starFloat 6s infinite linear;
+    transform-origin: center;
 }
 
 /* Cекція чому люди обирають нас why us */
@@ -644,6 +671,7 @@ Second-section Друга секція Перевтілюйтеся в beauty zo
 .header-icon-link,
 .footer-icon-link:hover .icon {
     color: var(--beauty-landing-2-s2);
+    transition: 0.2s;
 }
 
 .main-footer-text-holder a {
@@ -662,4 +690,80 @@ Second-section Друга секція Перевтілюйтеся в beauty zo
     color: var(--beauty-landing-2-background);
     font-weight: 400;
     font-size: 16px;
+}
+
+/* Модальне вікно */
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    max-width: 732px;
+    max-height: 681px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up.order-call {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    /* для кнопки закриття */
+
+}
+
+.close-modal {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background: none;
+    border: none;
+    font-size: 32px;
+}
+
+.sign-up.order-call .order-call-title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+}
+
+.sign-up.order-call .order-call-title-small {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+
+}
+
+.order-call-title-small span {
+    color: var(--beauty-landing-2-s2)
+}
+
+.is-hidden {
+    display: none;
+}
+
+.order-call-text-button-holder {
+    max-width: 310px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.order-call-button {
+    display: block;
+    margin: 24px auto 0;
 }

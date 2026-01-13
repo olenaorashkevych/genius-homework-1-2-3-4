@@ -33,7 +33,7 @@
             </nav>
 
             <div class="header-icons d-flex gap-32px">
-                <a href="#" class="header-icon-link">
+                <a href="#" class="header-icon-link phone-icon">
                     <svg class="icon">
                         <use href="./css/images/icons/symbol-defs.svg#icon-telephone-receiver_icon-iconscom_56033-1">
                         </use>
@@ -238,12 +238,14 @@
                                 <div class="form-field">
 
                                     <input type="text" id="full-name" name="full_name"
-                                        placeholder="Ваше ім'я та прізвище" required>
+                                        placeholder="Ваше ім'я та прізвище" required
+                                        pattern="^[А-Яа-яЁёЇїІіЄєҐґA-Za-z]+ [А-Яа-яЁёЇїІіЄєҐґA-Za-z]+$">
                                 </div>
 
                                 <div class="form-field">
                                     <label for="phone"></label>
-                                    <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефону" required>
+                                    <input type="tel" id="phone" name="phone"
+                                        placeholder="Ваш номер телефону +380ХХХХХХХХХ" required>
                                 </div>
 
                                 <div class="form-field">
@@ -333,10 +335,53 @@
         </div>
     </footer>
 
+    <div class="backdrop is-hidden" id="modal-backdrop">
+        <div class="modal">
+            <form class="sign-up order-call">
+                <button type="button" class="close-modal"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 8L16 16L24 8" stroke="white" stroke-width="2" stroke-linecap="round" />
+                        <path d="M8 24L16 16L24 24" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    </svg></button>
+                <p class="order-call-title">Замовити <br>дзвінок</p>
+                <div class="order-call-text-button-holder">
+                    <p class="order-call-title-small">Запишіться <span>безкоштовно</span><br>та отримайте подарунок</p>
+                    <div class="inputs-wraper">
+
+                        <div class="form-field">
+
+                            <input type="text" id="full-name" name="full_name" placeholder="Ваше ім'я та прізвище"
+                                required pattern="^[А-Яа-яЁёЇїІіЄєҐґA-Za-z]+ [А-Яа-яЁёЇїІіЄєҐґA-Za-z]+$">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефону +380ХХХХХХХХХ"
+                                required pattern="^\+380\d{9}$">
+                        </div>
+
+                        <div class="form-field">
+
+                            <input type="email" id="email" name="email" placeholder="Ваша електронна пошта" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn sign-up-button order-call-butt">
+                        Записатись&nbsp; безкоштовно
+                    </button>
+                    <p class="privacy-text">
+                        Натискаючи на кнопку я погоджуюсь <br>
+                        <a href="#" class="privacy-link"> з політикою конфіденційності</a>
+                    </p>
+                </div>
 
 
+            </form>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./modal.js"></script>
 
 </body>
 
