@@ -1,0 +1,36 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.25);
+  min-height: 106px;
+  display: flex;
+  padding-left: 100px;
+}
+.main-header .main-header__navigation-link {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--beauty-landing-2-c1);
+}
+.main-header .header-icons {
+  font-size: 32px;
+}
+.main-header .header-icons .header-icon-link {
+  color: var(--beauty-landing-2-c1);
+  display: block;
+}
+
+.header-icons .header-icon-link:hover {
+  color: var(--beauty-landing-2-s2);
+  transition: 0.2s;
+}
+
+.header-icons .icon {
+  display: block;
+}/*# sourceMappingURL=header.css.map */

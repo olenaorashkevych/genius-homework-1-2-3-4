@@ -1,11 +1,12 @@
 @import url('./fonts/fonts.css');
 @import "_variables.scss";
 
-@import "/scss/utils/base";
+@import "/scss/base";
 
-@import "_utils.scss";
+@import "/scss/utils/utils";
 @import "/scss/components/buttons.scss";
 @import "/scss/components/header.scss";
+@import "/scss/components/herosection.scss";
 @import"/scss/components/secondsection";
 @import "/scss/components/whyussection";
 @import "/scss/components/ourproceduressection";
