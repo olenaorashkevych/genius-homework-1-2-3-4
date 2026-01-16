@@ -1,0 +1,103 @@
+/* Стилі для всіх сторінок і блоків */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bakery-landing-1-background: #faf4ea;
+    --bakery-landing-1-s1: #31261a;
+    --bakery-landing-1-c2: #819b57;
+    --bakery-landing-1-s3: #465929;
+    --bakery-landing-1-s4: #a18268;
+    --bakery-landing-1-c5: #cfcfbc;
+    --beauty-landing-2-background: #fff;
+    --beauty-landing-2-s2: #2b7fff;
+    --beauty-landing-2-c1: #011c44;
+    --beauty-landing-2-c3: #4a4a4a;
+    --beauty-landing-2-s4: #ffd02b;
+    --beauty-landing-2-s5: #747272;
+    --beauty-landing-2-c6: #011f4a;
+    --dog-landing-3-background: #fff;
+    --dog-landing-3-s1: #ff9f0e;
+    --dog-landing-3-s2: #fcb62a;
+    --dog-landing-3-c3: #fffaf3;
+    --dog-landing-3-c4: #181817;
+    --dog-landing-3-c5: #f1f3ff;
+    --dog-landing-3-c6: #839aa9;
+    --dog-landing-3-s8: #f9f9ff;
+    --dog-landing-3-c9: #d9a6ff;
+    --dog-landing-3-c10: #ff6e9f;
+
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Poppins", sans-serif;
+    --third-family: "Play", sans-serif;
+}
+
+html,
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--beauty-landing-2-c1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 64px;
+    font-family: "Play";
+    font-weight: bold;
+}
+
+
+svg {
+    width: 1em;
+    height: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px auto;
+    padding: 0px 30px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-align-items {
+    align-items: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.gap-32px {
+    gap: 32px;
+}
+
+.gap-56px {
+    gap: 56px;
+}
+
+.font-base {
+    font-family: var(--font-family);
+}
+
+.font-2 {
+    font-family: var(--second-family);
+}
+
+.font-3 {
+    font-family: var(--third-family);
+}
