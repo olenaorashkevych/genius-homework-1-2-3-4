@@ -1,7 +1,7 @@
 
 const backdrop = document.getElementById('modal-backdrop');
 const closeBtn = document.querySelector('.close-modal');
-const phoneIcon = document.querySelector('.phone-icon');
+const phoneIcon = document.querySelector('.hero-section-button');
 
 closeBtn.addEventListener('click', () => {
     backdrop.classList.add('is-hidden');
