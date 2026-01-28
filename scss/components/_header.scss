@@ -38,3 +38,9 @@
     display: block;
 
 }
+
+@media (max-width: 768px) {
+    .main-header {
+        display: none;
+    }
+}

@@ -1,0 +1,61 @@
+.mobile-menu {
+    display: none; // закрите меню
+}
+
+@media screen and (max-width: 767px) {
+    .mobile-menu {
+        display: none; // закрите меню
+    }
+
+    .mobile-menu.is-open {
+        display: block; // відкрите меню
+    }
+
+    .mobile-toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        position: fixed;
+        top: 0;
+        min-height: 46px;
+        width: 100%;
+        z-index: 1000;
+        background: blue;
+    }
+
+}
+
+
+
+.menu-btn-open {
+    margin-left: auto;
+}
+
+
+
+.mobile-menu__inner {
+    width: 80%;
+    max-width: 320px;
+    height: 100%;
+    background: #fff;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.mobile-menu__icons {
+    display: flex;
+    gap: 24px;
+}
+
+.mobile-menu__icon-link {
+    font-size: 32px;
+    color: var(--beauty-landing-2-c1);
+}
+
+.mobile-menu__icon-link .icon {
+    fill: currentColor;
+}

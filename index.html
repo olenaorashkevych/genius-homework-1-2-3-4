@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title lang="en">Beauty Zone</title>
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./scss/main.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
-
     <header class="main-header">
         <div class="container d-flex flex-space-between flex-align-items">
             <div class="logo-header"> <a href="#" class="main-logo-link"><img src="./css/images/logo.svg"
                         alt="Beauty Zone" class="main-logo"></a></div>
+
+
             <nav class="main-header__navigation">
 
                 <ul class="navigation-list gap-56px d-flex">
@@ -55,7 +56,62 @@
             </div>
         </div>
     </header>
+    <div class="mobile-toolbar">
+        <a href="/" class="mobile-toolbar__logo">
+            <img src="./css/images/logo.svg" alt="Beauty Zone" class="mobile-toolbar__logo-img">
+        </a>
 
+        <!-- Мобільне меню кнопка -->
+        <button class="menu-btn-open" type="button" aria-label="Відкрити меню">
+            <img src="./css/images/menu.png" alt="" width="24" height="24">
+        </button>
+
+    </div>
+    <!-- мобільне меню розділи -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__inner">
+
+            <button class="menu-btn-close" type="button" aria-label="Закрити меню">
+                ✕
+            </button>
+
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/">Про нас</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="#why_us-section">Чому
+                            ми</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="#our_procedures-section">Наші
+                            процедури</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link"
+                            href="#how_to_find_us-section">Контакти</a></li>
+                </ul>
+            </nav>
+            <!-- іконки під меню -->
+            <div class="mobile-menu__icons">
+                <a href="tel:+380960000007" class="mobile-menu__icon-link" aria-label="Подзвонити">
+                    <svg class="icon">
+                        <use href="./css/images/icons/symbol-defs.svg#icon-telephone-receiver_icon-iconscom_56033-1">
+                        </use>
+                    </svg>
+                </a>
+
+                <a href="#" class="mobile-menu__icon-link" aria-label="Facebook">
+                    <svg class="icon">
+                        <use href="./css/images/icons/symbol-defs.svg#icon-fbopt"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="mobile-menu__icon-link" aria-label="Instagram">
+                    <svg class="icon">
+                        <use href="./css/images/icons/symbol-defs.svg#icon-insopt"></use>
+                    </svg>
+                </a>
+            </div>
+            <!-- кінець іконок мобільного менб -->
+        </div>
+
+    </div>
+    </div>
 
     <main>
         <section class="hero-section">
@@ -63,8 +119,10 @@
                 <div class="hero-section-hold">
                     <p class="hero-section-title">Косметологічна клініка</p>
                     <h1 class="hero-section-title-bg font-3">Beauty Zone</h1>
-                    <div class="button-hold"><button class="btn hero-section-button" id="">Замовити дзвінок</button>
-                        <p class="hero-section-text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+                    <div class="button-hold"><button class="btn hero-section-button" id="">Замовити
+                            дзвінок</button>
+                        <p class="hero-section-text">Запишись та отримай безкоштовну консультацію нашого
+                            косметолога</p>
                     </div>
 
                 </div>
@@ -288,7 +346,8 @@
                         <ul class="footer-navigation-list">
                             <li class="footer-navigation-link"><a href="/" target="_blank">Про нас</a></li>
                             <li class="footer-navigation-link"><a href="#why_us-section">Чому ми</a></li>
-                            <li class="footer-navigation-link"><a href="#our_procedures-section">Наші процедури</a></li>
+                            <li class="footer-navigation-link"><a href="#our_procedures-section">Наші процедури</a>
+                            </li>
                             <li class="footer-navigation-link"><a href="#how_to_find_us-section">Контакти</a></li>
                         </ul>
                     </nav>
@@ -348,7 +407,8 @@
                     </svg></button>
                 <p class="order-call-title">Замовити <br>дзвінок</p>
                 <div class="order-call-text-button-holder">
-                    <p class="order-call-title-small">Запишіться <span>безкоштовно</span><br>та отримайте подарунок</p>
+                    <p class="order-call-title-small">Запишіться <span>безкоштовно</span><br>та отримайте подарунок
+                    </p>
                     <div class="inputs-wraper">
 
                         <div class="form-field">
@@ -385,6 +445,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="modal.js"></script>
+    <script src="mobile-menu.js"></script>
 
 </body>
 
