@@ -58,9 +58,6 @@
 @media (min-width: 480px) {
     .mobile-menu__inner {
         max-width: 360px;
-
-
-
     }
 }
 
@@ -76,9 +73,18 @@
         display: none !important;
     }
 
-    .second-section img {
+    .second-section .container img {
         display: block;
     }
+
+    .our_procedures_text_card_holder .im-bg-2 {
+        display: block !important
+    }
+
+    .our_procedures_text_card_holder .im-bg-3 {
+        display: block !important
+    }
+
 }
 
 /* ===== ≥1200px ===== */
