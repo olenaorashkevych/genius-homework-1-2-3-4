@@ -1,42 +1,88 @@
-.mobile-menu {
-    display: none; // закрите меню
-}
+/* ===== MOBILE FIRST: базові стилі (0..767) ===== */
 
-.mobile-toolbar {
+// прибрати фото з мобільної версі
+.second-section .container img {
     display: none;
 }
 
-@media screen and (max-width: 767px) {
-    .mobile-menu {
-        display: none; // закрите меню
-    }
-
-    .mobile-menu.is-open {
-        display: block; // відкрите меню
-    }
-
-    .mobile-toolbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 16px;
-        position: fixed;
-        top: 0;
-        min-height: 46px;
-        width: 100%;
-        z-index: 1000;
-        background: blue;
-    }
-
+.our_procedures_text_card_holder .im-bg-2 {
+    display: none !important
 }
 
+.our_procedures_text_card_holder .im-bg-3 {
+    display: none !important
+}
 
+/* тулбар на мобілці видно */
+.mobile-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    min-height: 46px;
+    z-index: 1000;
+
+    // background-color: rgba(0, 0, 255, 0.9);
+    /* замість opacity */
+}
+
+/* десктопний хедер на мобілці ховаємо */
+.main-header {
+    display: none;
+}
+
+/* меню закрите за замовчуванням */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.mobile-menu.is-open {
+    display: block;
+}
 
 .menu-btn-open {
     margin-left: auto;
 }
 
+/* ===== ≥480px ===== */
+@media (min-width: 480px) {
+    .mobile-menu__inner {
+        max-width: 360px;
 
+
+
+    }
+}
+
+/* ===== ≥768px (tablet/desktop) ===== */
+@media (min-width: 768px) {
+    .main-header {
+        display: flex;
+
+    }
+
+    .mobile-toolbar,
+    .mobile-menu {
+        display: none !important;
+    }
+
+    .second-section img {
+        display: block;
+    }
+}
+
+/* ===== ≥1200px ===== */
+@media (min-width: 1200px) {}
 
 .mobile-menu__inner {
     width: 80%;
@@ -47,7 +93,6 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-
 }
 
 .mobile-menu__icons {
