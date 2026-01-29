@@ -130,7 +130,7 @@
 }
 /* Блок hero */
 .hero-section {
-  background-image: url(../images/fon.png);
+  background-image: url("../images/fon.png");
   background-size: cover;
   /* картинка покриває весь блок, не обрізається занадто */
   background-position: center top;
