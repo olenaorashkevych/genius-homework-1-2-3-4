@@ -200,6 +200,7 @@
   border-radius: 32px;
   max-width: 605px;
   overflow: hidden;
+  padding-bottom: 0;
 }
 
 .sign-up {
@@ -346,7 +347,22 @@
   margin-left: auto;
 }
 
-/* ===== ≥480px ===== */
+.why-us-section .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.how_to_find_us-section .how-to-find-wrapper {
+  flex-direction: column-reverse;
+  gap: 16px;
+}
+
+.main-footer {
+  margin-top: 22px;
+}
+
+/* ===== ≥480px ===== мобільна версія*/
 @media (min-width: 480px) {
   .mobile-menu__inner {
     max-width: 360px;
@@ -369,6 +385,16 @@
   }
   .our_procedures_text_card_holder .im-bg-3 {
     display: block !important;
+  }
+  .why-us-section .cards {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .how_to_find_us-section .how-to-find-wrapper {
+    flex-direction: row;
+  }
+  .main-footer {
+    margin-top: 93px;
   }
 }
 /* ===== ≥1200px ===== */
