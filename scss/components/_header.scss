@@ -27,6 +27,15 @@
         }
 
     }
+
+    &-hold {
+
+        @include respond(md) {
+            margin: 0 auto;
+            padding: 0 16px;
+            max-width: 100%;
+        }
+    }
 }
 
 .header-icons .header-icon-link:hover {

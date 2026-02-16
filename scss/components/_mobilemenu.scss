@@ -48,6 +48,8 @@
 
 .menu-btn-open {
     margin-left: auto;
+    background-color: transparent;
+    border: none;
 }
 
 .why-us-section .cards {
@@ -161,11 +163,11 @@
         margin-bottom: 0;
     }
 
-    .hero-section .hero-section-hold {
-        margin: 0 auto;
-        padding: 0 16px;
-        max-width: 100%;
-    }
+    // .hero-section .hero-section-hold {
+    //     margin: 0 auto;
+    //     padding: 0 16px;
+    //     max-width: 100%;
+    // }
 
     .hero-section .hero-section-title-bg {
         font-size: 64px;
@@ -181,7 +183,7 @@
         max-width: 100%;
         width: 100%;
         border-radius: 0;
-        /* якщо хочеш “на всю ширину” без відступів */
+
     }
 
     .map-container iframe {
@@ -196,12 +198,12 @@
 
     .map-container {
         margin-left: -16px;
-        /* якщо container має padding 16 */
+
         margin-right: -16px;
     }
 
     .hero-section {
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
         background-color: #fff;

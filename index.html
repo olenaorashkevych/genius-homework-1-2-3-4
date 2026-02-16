@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title lang="en">Beauty Zone</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="./scss/main.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -56,6 +55,8 @@
             </div>
         </div>
     </header>
+
+
     <div class="mobile-toolbar">
         <a href="/" class="mobile-toolbar__logo">
             <img src="./css/images/logo.svg" alt="Beauty Zone" class="mobile-toolbar__logo-img">
@@ -67,6 +68,7 @@
         </button>
 
     </div>
+
     <!-- мобільне меню розділи -->
     <div class="mobile-menu">
         <div class="mobile-menu__inner">
@@ -111,7 +113,6 @@
         </div>
 
     </div>
-    </div>
 
     <main>
         <section class="hero-section">
@@ -128,7 +129,7 @@
                 </div>
             </div>
         </section>
-        </div>
+
         <section class="second-section">
             <div class="stars">
                 <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 56 56"
@@ -169,14 +170,14 @@
             </div>
 
         </section>
+
+
         <div class="blue_wave_background">
             <section id="why_us-section" class="why-us-section">
                 <div class="container d-flex">
                     <div class="why_us_cards_text_holder">
                         <div class="why-us-text-holder">
-                            <h2>Чому люди <br>
-                                <span>обирають нас</span>
-                            </h2>
+                            <h2>Чому люди <br> <span>обирають нас</span></h2>
                         </div>
 
 
@@ -193,9 +194,6 @@
                                         та стаж роботи від 5 років</p>
                                 </article>
                             </div>
-
-
-
 
                             <div class="card">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48">
@@ -239,42 +237,92 @@
 
             </section>
             <section id="our_procedures-section" class="our_procedures-section">
-                <div class="container d-flex ">
+                <div class="container">
+
+                    <div class="our_procedures_tex_holder">
+                        <h2 class="header-our_procedures">Наші <span>процедури</span></h2>
+                    </div>
+                    <!-- 
                     <button class="our-procedures-section-button "><img src="./css/images/Arrow2.png" alt=""
-                            srcset=""></button>
+                            srcset=""></button> -->
+
                     <div class="swiper">
-                        <div class="our_procedures_text_card_holder">
-                            <div class="our_procedures_tex_holder">
-                                <h2 class="header-our_procedures">Наші <span>процедури</span></h2>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper our_procedures_card_holder">
+                            <div class="swiper-slide">
+                                <div class="im-bg im-bg-1">
+                                    <p class="card_text">Маски <br>для обличя</p>
+                                </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="im-bg im-bg-2">
+                                    <p class="card_text">Iн'єкції <br>для обличя</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="im-bg im-bg-3">
+                                    <p class="card_text">Очищення <br>обличя</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="im-bg im-bg-1">
+                                    <p class="card_text">Маски <br>для обличя</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="im-bg im-bg-2">
+                                    <p class="card_text">Iн'єкції <br>для обличя</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="im-bg im-bg-3">
+                                    <p class="card_text">Очищення <br>обличя</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev">
+                            <img src="./css/images/Arrow2.png" alt="">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="./css/images/Arrow1.png" alt="">
+                        </div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                    <!-- <div class="swiper">
+                        <div class="our_procedures_text_card_holder">
 
                             <div class="our_procedures_card_holder d-flex flex-space-between">
                                 <div class="im-bg-1">
                                     <p class="card_text">Маски <br>для обличя</p>
-
                                 </div>
                                 <div class="im-bg-2">
                                     <p class="card_text">Iн'єкції <br>для обличя</p>
-
                                 </div>
                                 <div class="im-bg-3">
                                     <p class="card_text">Очищення <br>обличя</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <button class="our-procedures-section-button "><img src="./css/images/Arrow1.png" alt=""
-                            srcset=""></button>
+                    </div> -->
+                    <!-- <button class="our-procedures-section-button "><img src="./css/images/Arrow1.png" alt=""
+                            srcset=""></button> -->
 
-                </div>
-                <div class="container d-flex">
+                </div> <!-- .container -->
+
+                <!-- <div class="container d-flex">
                     <div class="swiper-pagination"><img src="./css/images/Ellipse1.png" alt=""> <img
                             src="./css/images/Ellipse1.png" alt=""><img src="./css/images/Ellipse1.png" alt=""></div>
-                </div>
-        </div>
+                </div> -->
+            </section>
         </div>
 
-        </div>
 
         <section class="how_to_find_us-section d-flex">
             <div class="container d-flex">
@@ -332,6 +380,7 @@
         </section>
 
     </main>
+
     <footer class="main-footer">
         <div class="container">
             <div class="main-footer-text-holder">
@@ -444,6 +493,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="formats-slider.js"></script>
     <script src="modal.js"></script>
     <script src="mobile-menu.js"></script>
 

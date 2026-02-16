@@ -1,5 +1,37 @@
 @charset "UTF-8";
 @import url("./fonts/fonts.css");
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* =========================
+     ≥ 480px
+     ========================= */
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+/* =========================
+     ≥ 768px
+     ========================= */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+}
+/* =========================
+     ≥ 1200px
+     ========================= */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 32px;
+  }
+}
 /* Футер */
 .main-footer {
   position: relative;
@@ -92,8 +124,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.25);
@@ -112,6 +143,13 @@
 .main-header .header-icons .header-icon-link {
   color: var(--beauty-landing-2-c1);
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .main-header-hold {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 100%;
+  }
 }
 
 .header-icons .header-icon-link:hover {
@@ -322,10 +360,8 @@
   right: 0;
   min-height: 46px;
   z-index: 1000;
-  /* замість opacity */
 }
 
-/* десктопний хедер на мобілці ховаємо */
 .main-header {
   display: none;
 }
@@ -345,6 +381,8 @@
 
 .menu-btn-open {
   margin-left: auto;
+  background-color: transparent;
+  border: none;
 }
 
 .why-us-section .cards {
@@ -371,9 +409,7 @@
 @media (max-width: 767px) {
   .main-footer-text-holder {
     position: static;
-    /* прибрати absolute */
     min-width: 0;
-    /* прибрати 1239 */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -391,7 +427,6 @@
   }
   .hero-section {
     min-height: auto;
-    /* ❗ головне */
     padding-top: 70px;
     /* під mobile-toolbar */
     padding-bottom: 24px;
@@ -414,7 +449,7 @@
   }
   .why-us-section {
     margin-bottom: 60px;
-    /* було 110px (не критично, але логічно) */
+    /* було 110px */
   }
   .second-section .container.d-flex {
     flex-direction: column;
@@ -426,12 +461,10 @@
   }
   .second-section h2 {
     font-size: 36px;
-    /* було 64 */
     line-height: 1.1;
   }
   .second-section .text-holder .h2_span {
     margin-bottom: 16px;
-    /* було 40 */
   }
   .second-section .text-holder p {
     font-size: 16px;
@@ -441,14 +474,8 @@
     margin-bottom: 12px;
     /* було 40 */
   }
-  /* прибирає зайвий “останніх 40px” під текстом */
   .second-section .text-holder p:last-child {
     margin-bottom: 0;
-  }
-  .hero-section .hero-section-hold {
-    margin: 0 auto;
-    padding: 0 16px;
-    max-width: 100%;
   }
   .hero-section .hero-section-title-bg {
     font-size: 64px;
@@ -462,7 +489,6 @@
     max-width: 100%;
     width: 100%;
     border-radius: 0;
-    /* якщо хочеш “на всю ширину” без відступів */
   }
   .map-container iframe {
     width: 100% !important;
@@ -474,11 +500,10 @@
   }
   .map-container {
     margin-left: -16px;
-    /* якщо container має padding 16 */
     margin-right: -16px;
   }
   .hero-section {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
     background-color: #fff;
@@ -487,7 +512,6 @@
     width: 100vw;
     max-width: 100vw;
     margin: 0;
-    /* прибрати твої -16px */
     border-radius: 0;
     overflow: hidden;
     position: relative;
@@ -504,7 +528,6 @@
     display: block;
     border: 0;
   }
-  /* прибрати зазор до футера */
   .how-to-find-wrapper {
     gap: 0 !important;
   }
@@ -662,24 +685,24 @@
   gap: 12px;
 }
 
-.our_procedures_card_holder .im-bg-1 {
-  width: 344px;
+.our_procedures_card_holder .im-bg {
+  max-width: 300px;
+  margin: 0 auto;
+  width: 100%;
   height: 456px;
   border-radius: 4px 120px;
+  background-size: cover;
+}
+
+.our_procedures_card_holder .im-bg-1 {
   background-image: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%), url("../css/images/image1580opt.jpg");
 }
 
 .our_procedures_card_holder .im-bg-2 {
-  width: 344px;
-  height: 456px;
-  border-radius: 4px 120px;
   background-image: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%), url("../css/images/image1570opt.jpg");
 }
 
 .our_procedures_card_holder .im-bg-3 {
-  width: 344px;
-  height: 456px;
-  border-radius: 4px 120px;
   background-image: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%), url("../css/images/image1574opt.jpg");
 }
 
@@ -710,12 +733,17 @@
 /* 
 Second-section Друга секція Перевтілюйтеся в beauty zone */
 .blue_wave_background {
-  background-image: url(./images/backgroundnostar.png);
+  background-image: url("/css/images/backgroundnostar.png");
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
   margin-top: -7px;
   background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .blue_wave_background {
+    background-position: 0 0;
+  }
 }
 
 .second-section {
@@ -833,6 +861,15 @@ Second-section Друга секція Перевтілюйтеся в beauty zo
   margin-top: 78px;
   margin-bottom: 62px;
 }
+@media screen and (max-width: 768px) {
+  .why-us-section h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+.why-us-section h2 span {
+  color: var(--beauty-landing-2-s2);
+}
 
 .why-us-text-holder {
   max-width: 432px;
@@ -939,6 +976,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   margin: 0px auto;
   padding: 0px 30px;
@@ -979,35 +1020,36 @@ a {
   font-family: var(--third-family);
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 16px;
+.btn {
+  --bg: #5c62ec;
+  --color: #fff;
+  background-color: var(--beauty-landing-2-s2);
+  color: var(--color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 10px 28px;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.2s ease-in;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.btn:hover {
+  color: var(--color);
+  opacity: 0.8;
+  transition: 0.2s;
 }
 
-/* =========================
-     ≥ 480px
-     ========================= */
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
+.swiper {
+  padding-bottom: 60px;
 }
-/* =========================
-     ≥ 768px
-     ========================= */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 24px;
-  }
+.swiper .swiper-scrollbar {
+  display: none;
 }
-/* =========================
-     ≥ 1200px
-     ========================= */
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    padding: 0 32px;
-  }
+.swiper .swiper-pagination {
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

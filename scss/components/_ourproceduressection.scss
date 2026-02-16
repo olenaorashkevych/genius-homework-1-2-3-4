@@ -25,23 +25,24 @@
 
 }
 
-.our_procedures_card_holder .im-bg-1 {
-    width: 344px;
+.our_procedures_card_holder .im-bg {
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
     height: 456px;
     border-radius: 4px 120px;
+    background-size: cover;
+}
+
+.our_procedures_card_holder .im-bg-1 {
     background-image: linear-gradient(180deg,
             rgba(1, 28, 68, 0) 47.4%,
             rgba(1, 28, 68, 0.73) 82.66%,
             #011c44 99.06%),
         url("../css/images/image1580opt.jpg");
-
-
 }
 
 .our_procedures_card_holder .im-bg-2 {
-    width: 344px;
-    height: 456px;
-    border-radius: 4px 120px;
     background-image: linear-gradient(180deg,
             rgba(1, 28, 68, 0) 47.4%,
             rgba(1, 28, 68, 0.73) 82.66%,
@@ -53,16 +54,11 @@
 }
 
 .our_procedures_card_holder .im-bg-3 {
-    width: 344px;
-    height: 456px;
-    border-radius: 4px 120px;
     background-image: linear-gradient(180deg,
             rgba(1, 28, 68, 0) 47.4%,
             rgba(1, 28, 68, 0.73) 82.66%,
             #011c44 99.06%),
         url("../css/images/image1574opt.jpg");
-
-
 }
 
 .our_procedures_card_holder .im-bg-1,
