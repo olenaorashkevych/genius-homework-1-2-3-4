@@ -48,8 +48,17 @@ ul {
 
 h2 {
     font-size: 64px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Play";
     font-weight: bold;
+
 }
 
 
@@ -71,6 +80,11 @@ button {
     padding: 0px 30px;
     width: 100%;
     max-width: 1300px;
+
+
+    @include respond(md) {
+        padding: 0px 20px;
+    }
 }
 
 .d-flex {

@@ -1,14 +1,16 @@
-@import url('./fonts/fonts.css');
+//@import './fonts/fonts.css';
+
+@import "./base";
+@import "./utils/variables";
+@import "./utils/utils";
 @import "./media";
+
 @import "./components/fotter";
 @import "./components/header";
 @import "./components/herosection";
 @import "./components/howtofindussection";
-@import "./components/mobilemenu";
 @import "./components/modal";
 @import "./components/ourproceduressection";
 @import "./components/secondsection";
 @import "./components/whyussection";
-@import "./utils/utils";
-@import "./utils/variables";
-@import "./base";
+@import "./components/mobilemenu";
